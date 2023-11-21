@@ -1,11 +1,12 @@
-# Welcome to your Jupyter Book
+# 欢迎使用您的Jupyter Book
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+这是一本小样本书，让你了解书籍的结构化内容。
 
-Check out the content pages bundled with this sample book to see more.
+它展示了一些主要的文件类型，以及一些示例内容。
+
+它没有深入到任何特定的主题，请查看 [Jupyter Book文档](https://jupyterbook.org) 获得更多信息。
+
+查看与本示例书捆绑在一起的内容页，了解更多信息。
 
 ```{tableofcontents}
 ```
