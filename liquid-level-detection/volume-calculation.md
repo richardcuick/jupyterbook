@@ -2,23 +2,23 @@
 
 ## 泥浆罐体积计算
 
-- [[How to Calculate Mud Tank Volume in Barrel | bbl - YouTube](https://www.youtube.com/watch?v=j-Cu_IvO4eI&list=PLt7SSRUM5cGSyiRpQxhRNjh4CoaB0R4D_&index=1)](https://www.youtube.com/watch?v=j-Cu_IvO4eI&list=PLt7SSRUM5cGSyiRpQxhRNjh4CoaB0R4D_&index=1)
-- [[Rig volume calculation and capacity - SkillsSer](https://skillsser.com/oil-gas-articles/rig-volume-calculations/)](https://skillsser.com/oil-gas-articles/rig-volume-calculations/)
-- [[How to calculate mud tank volume in barrels? - YouTube](https://www.youtube.com/watch?v=rTLMsT7K9RU)](https://www.youtube.com/watch?v=rTLMsT7K9RU)
-- [[14. mud circulation system , volume calculations - YouTube](https://www.youtube.com/watch?v=MCsDpbBC0fA)](https://www.youtube.com/watch?v=MCsDpbBC0fA)
-- [[How To Calculate Capacities Of Mud Tanks (Pits) - Solids Control Shale Shaker (solidscontrolshaker.com)](https://www.solidscontrolshaker.com/calculate-capacities-mud-tanks-pits.html)](https://www.solidscontrolshaker.com/calculate-capacities-mud-tanks-pits.html)
-- [[Drilling Fluids Calculations For Drilling & Mud Engineer - Drilling Manual](https://www.drillingmanual.com/drilling-fluids-calculations-mud-engineer/)](https://www.drillingmanual.com/drilling-fluids-calculations-mud-engineer/)
-- [[5_2020_03_13!08_16_42_PM.pdf (uomustansiriyah.edu.iq)](https://uomustansiriyah.edu.iq/media/lectures/5/5_2020_03_13!08_16_42_PM.pdf)](https://uomustansiriyah.edu.iq/media/lectures/5/5_2020_03_13!08_16_42_PM.pdf)
+- [How to Calculate Mud Tank Volume in Barrel | bbl - YouTube](https://www.youtube.com/watch?v=j-Cu_IvO4eI&list=PLt7SSRUM5cGSyiRpQxhRNjh4CoaB0R4D_&index=1)
+- [Rig volume calculation and capacity - SkillsSer](https://skillsser.com/oil-gas-articles/rig-volume-calculations/)
+- [How to calculate mud tank volume in barrels? - YouTube](https://www.youtube.com/watch?v=rTLMsT7K9RU)
+- [14. mud circulation system , volume calculations - YouTube](https://www.youtube.com/watch?v=MCsDpbBC0fA)
+- [How To Calculate Capacities Of Mud Tanks (Pits) - Solids Control Shale Shaker (solidscontrolshaker.com)](https://www.solidscontrolshaker.com/calculate-capacities-mud-tanks-pits.html)
+- [Drilling Fluids Calculations For Drilling & Mud Engineer - Drilling Manual](https://www.drillingmanual.com/drilling-fluids-calculations-mud-engineer/)
+- [5_2020_03_13!08_16_42_PM.pdf (uomustansiriyah.edu.iq)](https://uomustansiriyah.edu.iq/media/lectures/5/5_2020_03_13!08_16_42_PM.pdf)
 
 # 泥浆损失计算
 
-- [[Pressure Loss Calculation In Drill String & Annulus - Drilling Manual](https://www.drillingmanual.com/pressure-loss-calculations-standpipe-pressure-drilling-hydraulics/)](https://www.drillingmanual.com/pressure-loss-calculations-standpipe-pressure-drilling-hydraulics/)
-- [[Lost Circulation and Well Control‎ (drillingformulas.com)](https://www.drillingformulas.com/lost-circulation-and-well-control/)](https://www.drillingformulas.com/lost-circulation-and-well-control/)
-- [[Basic Drilling Mud Calculations | PDF | Barrel (Unit) | Parts Per Notation (scribd.com)](https://www.scribd.com/doc/272051494/Basic-Drilling-Mud-Calculations)](https://www.scribd.com/doc/272051494/Basic-Drilling-Mud-Calculations)
+- [Pressure Loss Calculation In Drill String & Annulus - Drilling Manual](https://www.drillingmanual.com/pressure-loss-calculations-standpipe-pressure-drilling-hydraulics/)
+- [Lost Circulation and Well Control‎ (drillingformulas.com)](https://www.drillingformulas.com/lost-circulation-and-well-control/)
+- [Basic Drilling Mud Calculations | PDF | Barrel (Unit) | Parts Per Notation (scribd.com)](https://www.scribd.com/doc/272051494/Basic-Drilling-Mud-Calculations)
 - [VOLUME OF FLUID LOSS (ML) VS TIME (MINS) FOR MUD SAMPLES  | Download Table (researchgate.net)](https://www.researchgate.net/figure/OLUME-OF-FLUID-LOSS-ML-VS-TIME-MINS-FOR-MUD-SAMPLES_tbl2_263662425)
-- [[Mud Weight - an overview | ScienceDirect Topics](https://www.sciencedirect.com/topics/engineering/mud-weight)](https://www.sciencedirect.com/topics/engineering/mud-weight)
-- [[Mud loss estimation using machine learning approach (d-nb.info)](https://d-nb.info/1175368466/34)](https://d-nb.info/1175368466/34)
-- [[Microsoft Word - CutpointBlog _ Measuring Mud Lost with Cuttings (cutpoint-inc.com)](https://www.cutpoint-inc.com/assets/downloads/CutpointBlog_Measuring_Mud_Lost_with_Cuttings.pdf)](https://www.cutpoint-inc.com/assets/downloads/CutpointBlog_Measuring_Mud_Lost_with_Cuttings.pdf)
+- [Mud Weight - an overview | ScienceDirect Topics](https://www.sciencedirect.com/topics/engineering/mud-weight)
+- [Mud loss estimation using machine learning approach (d-nb.info)](https://d-nb.info/1175368466/34)
+- [Microsoft Word - CutpointBlog _ Measuring Mud Lost with Cuttings (cutpoint-inc.com)](https://www.cutpoint-inc.com/assets/downloads/CutpointBlog_Measuring_Mud_Lost_with_Cuttings.pdf)
 
 ---
 
