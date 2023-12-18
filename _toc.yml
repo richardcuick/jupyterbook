@@ -7,4 +7,5 @@ chapters:
 # - file: markdown
 # - file: notebooks
 # - file: markdown-notebooks
-- file: oil-industry
+- file: oil-industry/liquid-level-detection.md
+- file: oil-industry/liquid-volume-calculation.ipynb
