@@ -3,9 +3,8 @@
 
 format: jb-book
 root: intro
-chapters:
-# - file: markdown
-# - file: notebooks
-# - file: markdown-notebooks
-- file: oil-industry/liquid-level-detection.md
-- file: oil-industry/liquid-volume-calculation.ipynb
+parts:
+  - caption: 双液面一体化监测
+    chapters:
+    - file: liquid-level-detection/volume-calculation.md
+    - file: liquid-level-detection/mankendall-algorithm.ipynb
