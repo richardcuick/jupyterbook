@@ -63,6 +63,8 @@ parts:
     - file: learning/knowledge-base.md
     - url: http://
       title: 知识图谱
+    - file: learning/ai-awesome-list.md
+    - file: learning/vpn-awesome-list.md
   - caption: 双液面一体化监测
     chapters:
     - file: liquid-level-detection/project.md
