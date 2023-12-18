@@ -57,3 +57,14 @@
 - [Scratch Source Code - Scratch Wiki (scratch-wiki.info)](https://en.scratch-wiki.info/wiki/Scratch_Source_Code)
 - [Open source | micro:bit (microbit.org)](https://microbit.org/get-started/user-guide/open-source/)
 - [Open Source (microbit.org)](https://makecode.microbit.org/open-source)
+
+---
+
+## Online Judge (OJ) System Design with Serverless, AI and Web3 (for a Social Community)
+
+### References
+
+- https://blog.devgenius.io/case-study-remote-code-execution-engine-system-63aa43344f24
+- https://medium.com/@yashbudukh/building-a-remote-code-execution-system-9e55c5b248d6
+- https://github.com/budukhyash/remote-code-execution-engine
+- https://github.com/MartinXPN/LambdaJudge
