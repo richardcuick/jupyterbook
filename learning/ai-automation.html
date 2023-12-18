@@ -1,0 +1,1198 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>自动化进阶：人工智能产业化应用 &#8212; 大连坤晟科技知识库</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'learning/ai-automation';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="大连坤晟科技知识库 - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="大连坤晟科技知识库 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    欢迎使用您的Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">英语</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="http://">英语</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">架构</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../architecture/reference-architecture.html">参考架构</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">数字化转型</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">技术架构</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">业务架构</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">解决方案架构</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">企业架构</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">团队</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="http://">SCRUM</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">SAFe</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">DevOps</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">个人管理</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../personal/plan.html">个人规划</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">番茄工作法</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">单核工作法</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">精力管理</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">自我量化</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">健康管理</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">技术</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="http://">Serverless</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">RESTful API</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">微软MVP</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="http://">空</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">设计思维</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://">空</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">技术雷达</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="http://">空</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">学习方法</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="research-guide.html">学术研究</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csharp-kernal-installation.html">为Jupyter安装C#核心</a></li>
+<li class="toctree-l1"><a class="reference internal" href="knowledge-base.html">知识库构建</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">知识图谱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai-awesome-list.html">AI Awesome List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vpn-awesome-list.html">VPN Awesome List</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">双液面一体化监测</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/project.html">项目信息</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/volume-calculation.html">液体体积计算公式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/formula.html">计算公式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/working-condition.html">工况判断</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/mankendall-algorithm.html">曼肯德尔算法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/communication.html">通信协议</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/drilling.html">钻井业务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/navigation.html">导航结构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/data-model.html">数据模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/meeting-1.html">会议记录 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/meeting-2.html">会议记录 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">微信聊天机器人</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../wechat-bot/development.html">微信聊天机器人开发</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">信奥OJ</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../online-judge/project.html">Online-Judge</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/richardcuick/jupyterbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/richardcuick/jupyterbook/issues/new?title=Issue%20on%20page%20%2Flearning/ai-automation.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/learning/ai-automation.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>自动化进阶：人工智能产业化应用</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>序</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>前言</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">第1章 人工智能，势在必行</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">第2章 做好克服障碍的准备</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">第3章 从制定战略意图开始</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">第4章 选择七点及设计旅程图</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">第5章 制订一个计划</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">第6章 未来架构师</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">第7章 激励转型</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">第8章 保持收益</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">第9章 相关性、韧性和责任感</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>自动化进阶：人工智能产业化应用<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2><strong>序</strong><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>所有的项目或创意都不应该是以科技为出发点的。</p>
+<p>技术只是驱动因素，出发点应该是扩展人类的能力。</p>
+<p>通过提升速度、安全性、质量、成本效率和弹性，自动化积极助力企业实现业务增长。</p>
+<p>通过消除单调重复的任务，自动化允许我们将人类的注意力放在最需要它的地方——创意、共情和批判性思维。</p>
+</section>
+<section id="id3">
+<h2><strong>前言</strong><a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>什么是智能自动化？</p>
+<p>这是自动化的一个新时代，机器可以帮助完成那些过去由人承担的工作——那些涉及数字分析、做决策，以及从决策被实施后的成效中汲取经验。</p>
+<p>赋能你的员工，帮助他们提升到一个新高度。</p>
+<p>已经超越了“为什么”的问题，进入了“如何做”的问题。</p>
+<p>如何确定最重要的商业案例？如何确定这些问题的优先级？如何评估可能会拖累他们的遗留系统和数据问题？</p>
+<p>这使自动化成为继网络安全之后的第二大增长点。</p>
+<p>超自动化（即把离散的自动化任务连接起来，变成无缝的自动化流程，同时自动化分析识别出新的机会，将自动化带入新的领域）。</p>
+<p>应用智能自动化，消除在风险管理、销售策略、客户服务等方面的痛点。</p>
+<p>第一章，历史背景，为什么现在是投资认知技术的时候。</p>
+<p>第二章，设立了价值导向。</p>
+<p>第三章，明确战略意图的必要性。</p>
+<p>第四章，明智地选择在哪些方面实现自动化。</p>
+<p>第五章，如何制订实施计划、建立管理机制，并跟踪进展。</p>
+<p>第六章，如何构建一个面向未来的自动化。</p>
+<p>第七章，“软因素”。</p>
+<p>第八章</p>
+<p>第九章</p>
+</section>
+<section id="id4">
+<h2>第1章 人工智能，势在必行<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<p>一位虚拟助理可以在不影响质量的前提下提高作者和编辑的工作效率。由人工智能软件组成的虚拟助理，可协助人类发挥才能，并简化数字内容的制作过程。</p>
+<p>20世纪中叶，工业自动化成为大型工业企业的一次突破性的生产力变革。</p>
+<p>各行业的重点是通过机器代替人力，使制造过程更快、更便宜、更安全，以及更有能力保持生产质量的稳定性。</p>
+<p>工人们一直在使用工具，但自动化意味着将工作交给工具本身。</p>
+<p>美国劳工统计局的数字显示，在经历了1943年的战时高点之后，美国制造业的就业率几乎持续下降。制造业就业人数占总就业人数的比例在1943年尾37.9%，在2018年下降到8.5%。与此同时，服务业就业人数直线增长，先是在零售业，近几年是在医疗保健和社会援助领域。</p>
+<p>服务经济也是由许多重复性、标准化的劳动组成的，而且自动化也能减少服务业中的人力劳动，正如其给制造业所带来的改变一样。</p>
+<p>在制造业公司内，因为它们已经完全实现了生产过程的自动化，所以薪资表单上排在前面的也都是知识型员工。即使在传统上被称为制造商的公司中，也有大量员工从事后台和前台工作，他们的工作主要是信息处理，人数大大超过了车间里的工人。</p>
+<p>向客户提供更低廉的价格的能力和拓展利润空间的机会，使投资于自动化的理由一目了然。</p>
+<p>从工业自动化时代到智能自动化，优先关注从之前的削减成本转移到对客户体验、卓越业务、服务提升、创新和更明智的战略决策上。</p>
+<p>提升业绩和节约成本</p>
+<p>智能自动化的出现也将带来更多具有战略意义的增长和提高服务质量的机会。</p>
+<p>超越降低成本的目标，并通过自动化来改善客户体验。企业创造价值的能力以及收入的增长，都是其在未来保持竞争力的关键所在。</p>
+<p>自动化创造商业价值的新时代，将以认知型自动化技术的持续和快速发展为特征。</p>
+<p>从运用特定的自动化工具和解决一次性的问题，到建立广泛的自动化平台，通过整个业务的自动化来支持和加速解决问题。</p>
+<p>采用自动化会带来几何级级数增长。</p>
+<p>企业开启数字化转型之旅，在信息处理工作中更多应用自动化的基础已经奠定。</p>
+<p>商业数字化变革</p>
+<p>能够感知、学习和行动的机器</p>
+<p>一个智能自动化解决方案并不总是需要自然语言处理、机器学习、神经网络或其他人工智能特征。</p>
+<p>当人工智能被用来获取历史数据，归纳其中的模式，并在此基础上进行预测时，这两者就有了交集。</p>
+<p>配备了人工智能的机器可以分析数据，做出决策，并观察这些决策所产生的后续结果，做出调整以尝试做得更好。</p>
+<p>有可能自动实现自动化——使用工具来发现更好地使用工具的机会。</p>
+<p>任何整合了人工智能的自动化解决方案都依赖足够的数据来训练、测试和持续运用工具，因此在数据方面达到一定的成熟度，是启动任何人工智能驱动相关举措的先决条件。</p>
+<p>图1.2 自动化成熟度模型</p>
+<p>企业对能通过令人振奋的、技术驱动的方式来既解决企业长期存在的痛点，以及学习如何有效实施这类新方式解决方案感到很兴奋。</p>
+<p>狭义的自动化是为了暴露整体流程的低效率。</p>
+<p>精益流程改进方法要求系统地消除那些给企业带来很小价值或者没有价值的活动。它关注于减少花在不能带来增值的活动上的时间，并在第一时间提供精准的产品和服务。这是一种以客户为中心的方法，不断评估产品和服务是否以企业客户期望的质量、成本和速度交付。当应用于一个商业流程时，它可以改变客户体验。精益管理理念与六西格玛的质量管理方法，以及变革管理的领先实践一脉相承。这些理念的结合给企业提供了广泛的工具来衡量、分析和改进流程。</p>
+<p>在建立基础设施和学习流程，从而允许一个项目从另一个项目那里学到经验和教训，并培养出高于单一项目水平的能力。</p>
+<p>RPA是一个供应商提供的工具包，可以帮助机构内的各团队以经济可行的成本，实现那些与信息系统对接的重复性任务的自动化。</p>
+<p>过去这些步骤通常是由一个办公室工作人员通过访问、合并、处理和/或分享信息完成的。</p>
+<p>RPA将重复性、基于规则的流程自动化，这些流程是可预测并涉及大量结构化数据的。</p>
+<p>常规的、繁重的、大批量的，主要是基于规则的。</p>
+<p>一家公司中典型的自动化之旅的关键一步，是管理层意识到应该为一些工作建立一个组织，建立相关知识储备体系，可以使新项目免于完全从零起步。</p>
+<p>深层次数字驱动和智能自动化</p>
+<p>平衡社会、客户和股东的期望，以及短期竞争优势和长期可持续发展之间的矛盾。</p>
+<p>数据泛滥问题</p>
+<p>数据驱动的自动化也可以产生源源不断的洞察力来推动智能技术发展，它可以推动更快速地做出更明智的决定来加速创新。</p>
+<p>将数据作为企业资产加以管理</p>
+<p>实施个性化工具</p>
+<p>流程化的阶段</p>
+<p>简化任务及改善工作流程</p>
+<p>RPA</p>
+<p>将耗时的任务序列交给机器处理</p>
+<p>数据管理水平，使其拥有可以推进到数据驱动、预测性的解决方案。</p>
+<p>知识工作自动化</p>
+<p>人工智能驱动的解决方案</p>
+<p>机器学习和深度学习使无数人工智能突破的核心所在。</p>
+<p>侵犯隐私、决策偏差和控制方面问题</p>
+<p>《机器于人：重新想象人工智能时代的工作》</p>
+<p>要点</p>
+<ul class="simple">
+<li><p>智能自动化使自动化的一种形式，它为以信息为基础的工作带来更高效率，不仅提升了成本效率，而且提升了发客户体验并带来营业额增长。</p></li>
+<li><p>每家公司目前都处于智能自动化成熟度的某个阶段，有些公司正在将智能自动化变成核心竞争力，并将其应用于整体业务。</p></li>
+<li><p>不同于过去对自动化的投资，当下对自动化的投资必须是”以人为本“的，发挥人的优势，并由技能、经验、组织和文化投资所支持。</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>第2章 做好克服障碍的准备<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p>组织结构阻碍了他们的发展</p>
+<p>最大的挑战在于数据</p>
+<p>员工不愿意采用新工具</p>
+<p>人员、流程、技术和战略</p>
+<p><strong>障碍1：人才和技能的短缺</strong></p>
+<p>缺乏技术人才和招聘困难是人工智能应用的头号瓶颈</p>
+<p>组织既需要开发人工智能和自动化解决方案的技能，也需要有效使用它们的技能。</p>
+<p>自动化工程师所需的关键能力包括自动化分析、编程、软件开发、数据分析、数据可视化、信息安全，以及这一切所基于的组织在道德规范方面的基石。</p>
+<p>机器人流程自动化、语音识别、自然语言处理、机器学习以及其他形式的人工智能。</p>
+<p><strong>障碍2：组织障碍</strong></p>
+<p>企业文化和变革是人工智能成败的关键。</p>
+<p>效率的提高和浪费的减少，会进一步提升经济的生产效率，为工人提供从事价值创造和高回报的、更具吸引力的工作选择。</p>
+<p><strong>障碍3：不达标的流程和过时的政策</strong></p>
+<p>最好从一张白纸开始，并根据当前的实际情况重新设计流程。</p>
+<p>如果一个组织能够在实现部分操作的自动化之前，及时停下来调整方向，那么流程就不会成为智能自动化成功的障碍。</p>
+<p>在它们能够被适当地自动化之前，需要被很好地定义和理解。</p>
+<p><strong>障碍4：一个在旧时代建立的技术环境</strong></p>
+<p>这些阻碍表现为传统的架构、不充分的数据和现成的解决方案。</p>
+<p>遗留系统搜存在的阻碍表明，考虑新的值得采取的解决方案有很高的门槛。</p>
+<p>事实上，鉴于人工智能的革命性潜力，新的架构应该以人工智能为中心，每层架构都应该以支持人工智能为首要任务的方式来构建。</p>
+<p>微服务架构。这种非常现代的架构风格通过对数据、基础设施和应用程序的解耦来实现更强的灵活性。</p>
+<p>缺乏良好的数据管理策略。</p>
+<p>清理、设计和优化，以便对决策和自动化行为有用。</p>
+<p>障碍：不能扩大解决方案的使用规模，或者不能从整体上考虑什么能帮助企业实现其最重要的战略目标。</p>
+<p><strong>障碍5：缺乏战略校准</strong></p>
+<p>在组织内建立智能自动化能力。</p>
+<p>智能自动化解决方案应与整体业务战略相一致。</p>
+<p>项目团队将会准确了解今天所处理的错误率和平均错误时间。这些都是关键指标，用来衡量项目的进展。</p>
+<p>成本节约通常是最突出的目标，部分因为它更容易衡量，可以用来显示项目的投资回报；智能自动化也可以应用于提高速度或提升质量，可以通过简化流程或为客户节省时间提供价值。</p>
+<p>路线图</p>
+<p>从目前的自动化起点到自动化目的地的旅程。</p>
+<p>应经常设定业务目标，并由员工以创造性的方式通过变革性的自动化技术在整个企业中实现。</p>
+<p>智能自动化路线图实际上是关于自动化如何发展和引进，以获得最大积累效应的一种战略。</p>
+<p>这不仅是企业技术部署层面的转型之旅，也是商业模式以及运营模式层面的转型之旅。</p>
+<p>它的项目于企业的优先事项之间缺乏一致性。</p>
+<p>企业的比那个能力在任何特定的时间范围内都是有限的，必须要做出战略选择。一家企业必须有一个将各种机会分门别类梳理的流程，类别包括”短平快“、具有战略意义的优势，等等。</p>
+<p><strong>智能自动化的四个迷思</strong></p>
+<p>迷思1：我们的客户还没有做好准备</p>
+<p>智能自动化的重点是使优秀的员工——公司最稀缺和最难拓展的资产，能够专注于机器无法完成的任务。人的素质和能力，如领导力、装造粒、说服力、批判性思维以及直觉等，仍将是公司竞争优势的源泉，因为它们难以复制。</p>
+<p>迷思2：智能自动化的成功完全是技术挑战</p>
+<p>迷思3：最好不要成为先行者</p>
+<p>但更大的风险在于失去了在使用可行技术的过程中不断学习的红利。</p>
+<p>迷思4：流程被自动化意味着大功告成</p>
+<p>自动化是不断迭代和延续的。在实现一项任务或流程的自动化后，公司需要不断改进，特别是通过结合机器人流程自动化、人工智能和现代工程来进行。</p>
+<p>一旦一个基本的解决方案开始运行，就总是有新的机会和新的举措可以被添加到其中，自动化旅程永远不会结束。</p>
+<p>人员、流程、战略和技术</p>
+<p>本章要点：</p>
+<ul class="simple">
+<li><p>在应用智能自动化的过程中，有一些非常现实的障碍需要克服。涉及人员、流程、技术和战略。本书的重点是帮助组织克服这些障碍。</p></li>
+<li><p>但是，许多尝试被一些误解所妨碍：客户还没哟准备好接受自动化，智能自动化解决方案主要是技术项目，”快速追随“比先行一步更安全，以及解决方案到位就可以一劳永逸，不再需要管理人员的关注。</p></li>
+<li><p>为了使组织在智能自动化的时代中胜出，管理者必须认识到这些障碍，摒弃这些迷思，并拿出能够超越这些障碍的举措。</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>第3章 从制定战略意图开始<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<p>它放弃了”瀑布法“和其它传统方法论，转而采用”敏捷“和DevOps的新方法。它在整个流程中端对端地应用了智能自动化，这降低了开发成本，并使开发变得更快、更可靠。</p>
+<p>战略性思考：以最能推动业务战略的方式来应用它，为培养IT系统能力制定明智的战略，并为特定的解决方案设定雄心勃勃和明确的目标。</p>
+<p>领先的公司都能说出它们试图实现的最重要的唯一目标。</p>
+<p>当一个管理团队阐明本企业的战略意图时，这个战略意图对该企业的发展方向以及其希望实现的长期目标做了一个令人信服的、简洁的声明。</p>
+<p>将组织的注意力集中在取得胜利的本质上，通过沟通目标的价值来激励人们，用战略意图的一致性指导资源分配。</p>
+<p>智能自动化工作就应着眼于如何能够推进预期的竞争优势，甚至达到促进商业模式转型的水平。</p>
+<p>不仅是减少成本、时间和错误的手段，对推动商业战略同样重要，战略要求拓展其他方面的能力，个性化的客户服务，更快的业务扩展，更符合事情的决策，或更好的风险、安全和合规管理。</p>
+<p>业务部门应该使最终交付结果的负责人，并且准备好参与到监控、调整和新的智能自动化创造过程中。</p>
+<p>技术的进步将不断涌现，而伟大的业务战略家将持续借势实现商业成功。</p>
+<p>在这个智能自动化的时代，最高管理层计划怎样带动组织发展？行业的未来是什么？未来三到五年价值的定义会发生什么改变？只有具备了清晰的战略意图，管理团队才能从整体上思考所有的系统、资源、约束、边界和组成部分。</p>
+<p>系统战略必须始终于业务战略保持纵向一致</p>
+<p>系统战略仍应按其自身实际进行规划，旨在为整个企业建立强大而持续的能力。</p>
+<p>通过对自动化技术的投资可以培养额外的技能和收获更多的价值，应该制定出时间表，并为明确责任和跟踪投资回报提供指导。</p>
+<p>更全面的战略，建立面向未来的系统。</p>
+<p>传统意义上，IT”堆栈“的组成部分，包括数据库、应用程序和基础设施，一直被看作独立的实体。随着组织逐渐转移到”云上“，以及采用统一的数据、安全和治理方法，这种独立性正在逐渐消失。</p>
+<p>一个企业必须在其数据战略上下功夫，从高质量的数据出发，将以数据为中心的方法应用于最重要的商业决策中。把人放在流程设计的中心位置，并意识到数据和技术并不能单独解决问题。</p>
+<p>“快速失败、尽早验证”这句话，是指团队应该在初期就开始收集对他们设计的反馈，从失败中学习并产生一系列迭代，体现出持续和稳定的改进。</p>
+<p>定期反思三个问题可以帮助保持自动化的战略方向：我们是否专注于建立一个自动化的生态系统，以打破组织孤岛并优化我们的投资？我们的战略是否真正注重敏捷性，并能做出快速决策以快速响应技术变化？我们是否正在设计能在整个企业中推广的自动化，以及打造能为未来铺平倒库的系统？</p>
+<ul class="simple">
+<li><p>培养一个结构合理的自动化生态系统，打造一个合作伙伴、服务供应商和学术机构可以共创价值的网络。</p></li>
+<li><p>扩大规模，使公司能够迅速和有信心地进行创新，并推出具有真正影响力的解决方案。</p></li>
+<li><p>利用预先构建的、可定制的解决方案，将其融入业务并在公司层面推广，加速职能部门的创新、降低成本，更快地取得成果。</p></li>
+<li><p>用强大的数据战略支持自动化战略。例如，利用拥有包括边缘实时数据的自主数据集成，可以创建一个单一的“真相之源”来指导业务。</p></li>
+</ul>
+<p>智能自动化战略需要一个结构化路径。</p>
+<p>4S——简化、无缝、规模化和可持续</p>
+<p>图3.1 “4S”战略驱动实现最高级别自动化成熟度</p>
+<p>重新调整应用程序和架构，以实现简单的模块化。</p>
+<p>简单的原则：</p>
+<p>第一，确定对商业重要的用例，即确定投资回报率驱动的自动化用例；</p>
+<p>第二，设计易于使用、易于扩展和易于演化的自动化；</p>
+<p>第三，采取切实可行的的实施方法，协助每个用户将自动化无缝地融入他们的日常生活中。</p>
+<p>部分或全部实现自动化之前，就对业务流程进行简化。</p>
+<p>需要应用精益原则和六西格玛来消除不必要的或过于烦冗的工作步骤。</p>
+<p>建立报告、管理和跟踪的方法，这都是非常基本的，但也非常关键。</p>
+<p>确保现有技术生态系统和自动化层之间的无缝连接。</p>
+<p>未来的成功将取决于通过数字解耦将核心系统与新系统无缝连接。</p>
+<p>任何从零开始创建的系统既要提供一个流畅的终端用户体验，也要允许新技术的不断融合和业务流程的变化，还要不损害基本的公共服务所需。</p>
+<p>（DNA）——它们的思考和工作方式与众不同，别人很难复制。</p>
+<p>持续学习、设计渐进的原型和共同创造。</p>
+<p>智能自动化解决方案需要解决五类问题：业务成熟度、数据访问和治理、文化和人才、平台和架构，以及智能自动化所特有的问题。</p>
+<p>公司应该建立机制，不断扫面兴业研究，识别不断涌现的新机遇，包括机器人流程自动化、其他类型的自动化、人工智能和分析，并调研其他组织使如何对其进行试验的。</p>
+<p>智能自动化行动能否延续取决于是否有办法监测正在产生的商业价值。</p>
+<p>仔细核算每一美元的投资和诀曰，对支持智能自动化以及认可其所产生的价值都能发挥很大的作用。</p>
+<p>自动化创新从一开始就有一个全面的视角，将对其他业务线、相互协作的流程、数据管理和人才管理等方面的影响纳入考量。</p>
+<p>在这个时间节点上我们开始熟悉这些尝试，埃森哲参与其中，帮助设计、构建和测试新的解决方案，采用敏捷方法，快速开发了最小型的可行产品并根据反馈意见不断迭代和完善。</p>
+<p>智能自动化应该被当作一个全企业范围的举措来对待。</p>
+<p>数字化转型使一项全局性举措一样，企业应该统一部署，而不是在投资零星的数字化项目。</p>
+<p>从战略角度出发，全面实施及进行持续管理。</p>
+<p>在企业层面上制定战略，并考虑如何在各业务条线、项目、运行支持、基础设施、数字、安全等方面引入和拓展自动化。</p>
+<p>重要的差异化点</p>
+<p>本章要点：</p>
+<ul class="simple">
+<li><p>任何智能自动化尝试都应该与企业的战略协同一致，专注于解决那些对企业成功有真正影响力的问题。</p></li>
+<li><p>项目应该融入企业为提升智能自动化能力而提前规划好的战略。早期的尝试应该为后面夯实基础。</p></li>
+<li><p>在单个项目层面，自动化举措也需要一个战略。设定激励性目标并将其转化为明确的时间表。</p></li>
+<li><p>由于战略会随着条件的变化而不断变化，因此必须有一个流程表定期审视和更新企业的指定自动化战略。</p></li>
+</ul>
+</section>
+<section id="id7">
+<h2>第4章 选择七点及设计旅程图<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<p>希望将IT运营部门从传统的成本中心，变成一个商业价值驱动的部门。</p>
+<p>弥合IT战略与企业整体业务战略之间的差距。</p>
+<p>自动化评估，以帮助确定实现业务目标的最大机会。</p>
+<p>评估结果表明，有可能减少常规业务中出现的45%的事故量和高达60%的工作量。节省大量如那件工具许
+可证的费用，实现99%的业务运营稳定性，在与客户达成的服务水平协议方面，则可达到98%的合规性。</p>
+<p>业务流程进行了详尽的评估。将利益相关者、行业专家和技术架构师聚在一起，试图在企业层面消除冗余的工作，精简关键的活动，并提高每个流程创造商业价值的潜力。</p>
+<p>这是一个持续改进的环境，人们已经习惯于以积极主动的方式面对技术浪潮。</p>
+<p>数据驱动的识别机会的方法，方法既是定量的，也是定性的。</p>
+<p>有助于锁定那些既具有高价值的商业影响力，也与企业当前的自动化成熟度相匹配的机会。</p>
+<p>从以业务为中心的角度来看，什么会对自动化产生最大的影响？考虑到开发和部署解决方案的能力，什么形式的自动化是可行的？制定出一个体现了有价值的自动化旅程的自动化计划，并随着能力的增加在未来不断为更大的自动化成功继续力量——先部署什么最有意义？下一步呢？</p>
+<p>第一，涉及识别那些有价值的备选流程，涉及重复性、常规性的信息处理任务。</p>
+<p>第二，自动化成熟度进行清洗的评估，采用不同复杂程度的自动化。</p>
+<p>第三，构建一个路线图。</p>
+<p>将战略业务目标转化为自动化举措意味着对业务流程的关注。</p>
+<p>劳动密集型工作流程似乎对自动化解决方案的需求更为迫切。</p>
+<p>框架：消除和优化，然后才是自动化。</p>
+<p>“精益过程改进”或“六西格玛缺陷减少”方法论</p>
+<p>消除不必要的工作更具价值，而不是将其自动化。</p>
+<p>“根本原因分析”，是发现导致效率地下问题原因的最好方法。</p>
+<p>很多时候，提高效率的最佳途径并不是直接将大量的工作任务自动化，而是努力厘清这些盘根错节的工作任务。</p>
+<p>流程自动化产生的数据采集，消除了层层的手工数据收集和分析。</p>
+<p>让我们的客户更加关注技术债务在这方面的努力。</p>
+<p>如果说一组工作步骤不能被消除，那么它就是必须要执行的。</p>
+<p>要优化一个流程，第一步是绘制它。</p>
+<p>一个看似简单的流程，时间上充满了例外和特殊用例，所有这些都必须被预见到和记录下来。</p>
+<p>在人们声称要遵循的官方流程和实际使用的非官方流程之间，往往存在着实质差异。</p>
+<p>这个流程是否值得自动化？它是否值得照原样进行自动化？是否需要在实现自动化之前重新涉及该流程？</p>
+<p>一个涉及得糟糕的流程会给自动化带来障碍。</p>
+<p>如果该力促恶化给你虽然值得进行自动化，但不能按照原样进行，则可以采用一种经过验证的方法，例如精益流程改进，可以将其变得更好。</p>
+<p>非技术性的，业务方面的流程的持续使用者。绘制出现有的流程图，介绍修订后的流程图，征询他们的反馈，并再次迭代升级，使其更加完善。</p>
+<p>流程文件的最终版本因该是新的标准操作流程（SOP）文件的基础。</p>
+<p>首要任务是确保流程有效地完成其目标。</p>
+<p>在已经确定的历程中排列有限次序。</p>
+<p>应该选择最简单的解决方案，因为破坏性较小并可以利用现有的工具和技术来涉及。</p>
+<p>复杂度高的项目，将以一种富有成效的方式挑战组织，并建立其自动化的能力，以产生更大的影响。</p>
+<p>面临自动化机遇的应用会有一些共性：它们可能需要频繁手动更新、快速扩展、数据提取，或高度个性化。</p>
+<p>关键是寻找摩擦点</p>
+<p>摩擦点可以通过数据分析来发现。使用趋势、文本分析、网络分析、社交媒体分析、预测以及其他方式进行深层分析，可以提高洞察力，以驱动更多的自动化和优化的机会。</p>
+<p>精益管理或六西格玛有助于指明方向。</p>
+<p>使用六西格玛的“因果矩阵”进行分析，可以显示出根据标准应优先处理的因素，包括频次、自动化所需的努力、对业务的重要性以及潜在的时间节省。</p>
+<p>一旦为这些因素分配了数值，就可以简单地使用矩阵来计算总数，并确定潜在的自动化项目的优先次序。</p>
+<p>图4.1 确定优先级的矩阵</p>
+<p>企业会经历五个基本阶段：</p>
+<ul class="simple">
+<li><p>基础阶段（工具驱动）：这个层次的自动化更多的是以个人为中心的、孤立的，并且有提供点状解决方案的一些零散工具。</p></li>
+<li><p>优化阶段（流程驱动）：消除流程中不必要的步骤，并优化和改进流程。</p></li>
+<li><p>效率阶段（RPA驱动）：重点关注可以在自动化过程中获得“速赢”的所有重复性任务，并建立和稳定所有基础性活动，这些是数据驱动和智能自动化的前提条件。</p></li>
+<li><p>预测阶段（数据驱动）：将焦点从减少成本转移到提升效率和差异化体验。下一个重要步骤是，从数据中获得洞察力和情报，以推动自动化增强业务的敏捷性和可预测性。</p></li>
+<li><p>智能化阶段（AI驱动）：允许机器感知、理解、行动和学习。人工智能可以使自动化超越那些仅仅使基于规则的工作，直接进入我们目前认为总是需要人类判断的领域。</p></li>
+</ul>
+<p>自动化成熟度评估</p>
+<p>企业当前的人工智能和分析能力</p>
+<p>能力和差距分析</p>
+<p>了解人工智能所带来的优势，如决策、发现创新机会，以及创造自我进化的能力。</p>
+<p>企业如何发挥这些优势，差异化地发展自身？而这一愿景与企业目前的发展情况有多大不同？</p>
+<p>自动化成熟度不完全取决于其技术能力和过往业绩。</p>
+<p>图4.2 自动化基于识别评估的组成部分</p>
+<p>路线图也会建议自动化的步骤、路径和部署策略。</p>
+<p>图4.3 自动化路线图</p>
+<p>业务成果的进展，以及在企业中实现更高自动化成熟度的进展。</p>
+<ul class="simple">
+<li><p>第一阶段：建立。评估自动化潜能并确定整个企业的试点流程，以实现特定的应用/解决方案。</p></li>
+<li><p>第二阶段：扩展。开发、部署和扩展解决方案。</p></li>
+<li><p>第三阶段：运作。扩大地理覆盖范围以充分实现价值，基于所学知识重新审视长期自动化战略。</p></li>
+</ul>
+<p>“设计思维”这个词指的是一种管理思维的活动，通过这种活动，现代化工业工程的原则如可用设计，已经从诸如手持设备和厨房用具等精致消费产品，转化到商业竞争的其他方面，诸如客户界面和商业模式。</p>
+<p>为了释放自动化的全部潜力，重要的是要在整个企业内基于企业层面的视角应用自动化。</p>
+<p>关键是要研究、制定战略和解决问题。</p>
+<p>从收集尽可能多的关于现有流程、系统和数据的信息开始，然后明确整体业务的优先级，再进行研究、制定战略和解决问题——也就是说，团队应该从数据分析和基准测试（benchmarking）中产生洞察力，识别自动化的良机，并进行战略调整，根据业务影响力确定哪些机遇应该被优先考虑，然后根据企业开发和接受新技术的能力设计具体的自动化解决方案。</p>
+<p>研究现有的自动化环境并识别机会。</p>
+<p>可使用路线图联系，利用脑力激荡/设计思维工作坊来了解业务目标并策划出实现这些目标的最佳步骤。决定哪些要自动化，以及如何自动化。</p>
+<p>图4.4 识别和评估自动化机会</p>
+<p>目标是有效并高标准地开发和部署线路图所规定的解决方案。</p>
+<p>消除、优化和自动化。</p>
+<p>首先，消除不必要的工作。</p>
+<p>然后，通过引进资产和工具，来优化执行重复性任务所需的努力。</p>
+<p>通过消除经常发生问题的根本原因，永久性消除一些问题和低效率。一个典型的结果是事故的减少。</p>
+<p>安波尔的智能自动化之旅</p>
+<p>本章要点：</p>
+<p>在应用智能自动化方面存在如此多的机会，组织必须通过合理的方式来原则它的出发点。</p>
+<p>最好的“下一个项目”将是处于组织的优先事项和其准备情况如的平衡点的项目——组织最需要什么解决方案，以及它最有能力实施何种解决方案。</p>
+<p>什么问题对组织最重要？答案来自投资回报率分析，不仅要考虑成本节约，而且要考虑营业额收益。</p>
+<p>组织的智能自动化人才准备解决什么问题？要明确这一点，一个组织应构建并追踪智能自动化成熟度模型的进展。</p>
+</section>
+<section id="id8">
+<h2>第5章 制订一个计划<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<p>做出战略选择并制定了路线图，制订一个囊括整个项目组合的计划，所需基本要素到位。</p>
+<p>自动化运营模式，运营模式只是一个说明如何以高质量的方式，一遍又一遍完成工作的有组织的模板。</p>
+<p>管理者可以把大多数自动化项目所面临的共性问题从每个项目的特定问题中归纳出来，并试图找到适用于所有项目团队的强有力的答案。</p>
+<p>创建一个运营模式。</p>
+<p>运营模式为它们减少了大量的工作。</p>
+<p>一个结构合理的运营模式的最大好处是能发挥协同作用及获得规模效益。</p>
+<p>通用操作模型，工作人员所需要的能力则要求企业在流程设计、治理和绩效管理方面都具备管理优势，以及足够强大的技术栈。</p>
+<p>自动化团队应该关注一下类别：</p>
+<ul class="simple">
+<li><p>机会识别</p></li>
+<li><p>效益实现及跟踪</p></li>
+<li><p>自动化战略</p></li>
+<li><p>创新与孵化</p></li>
+<li><p>交付和变革管理</p></li>
+<li><p>自动化运营</p></li>
+<li><p>技术和平台</p></li>
+<li><p>自动化推动因素</p></li>
+<li><p>集中管理</p></li>
+</ul>
+<p>图5.1 自动化运营模式示例</p>
+<p>机会评估规模化。自动化评估工具和自动化成熟度模型。</p>
+<p>企业需要阐明关键绩效指标（KPI）。</p>
+<p>“目标、问题、指标”，即GQM</p>
+<p>VeriSM(TM)为正在推进数字化转型的企业提供的可量化。</p>
+<p>财务术语中的净利润是最具说服力的。</p>
+<p>绩效指标必须触及对成功至关重要的核心问题。</p>
+<p>例如减少错误，帮助人们转向附加值更高的活动，改善客户体验或使创新成果更快地进入市场，其中任何一个目标都可以被赋予衡量指标。</p>
+<p>这种有针对性的营销只有在高度数据化的环境中才能实现。</p>
+<p>从战略上考虑自动化的重要性。</p>
+<p>不仅包括为团队提供自动化的策略，而且涉及自动化路线图的涉及和更新以及标准和政策的实施。</p>
+<p>项目进展过程中必须做什么类型的决策？怎样才能确保这些决策是理所当然的，考虑到了不同角度并能及时提供答案？应该由谁参与做出决策，他们将在这个过程中发挥什么作用？</p>
+<p>自动化运营模式也应该纯粹以创新为名进行试验和研究。</p>
+<p>为自动化项目提供一个可反复使用的模块软件库。</p>
+<p>在交付和变革管理中，我们看到运营模式为项目团队指出了敏捷项目管理、自动化变革管理、自动化发展和自动化部署的最佳实践。</p>
+<p>监督所承诺的自动化项目组合，以满足业务需求，迭代涉及、开发、测试和推出自动化解决方案，以及对企业应用程序进行生命周期管理。</p>
+<p>设计权威机构</p>
+<p>审查所有解决方案设计，以确定它们是否能够实现自己的目的，以及它们能否与更广泛的体系结构保持足够的一致性，无须考虑集成问题。</p>
+<p>设计权威机构必须创建并执行葛洪架构和设计的标准，涉及应该遵循哪些框架和方法，应该如何概述流程，以及什么工具应该受到推崇。</p>
+<p>特别是当设计权威机构身处一个合作的设计思维环境时，它可以确保自动化应用的连贯性、一致性和以客户为中心，从而实现真正的商业价值。</p>
+<p>运营模式可以概述一下内容：如何管理日常的自动化运营，并提供业务和技术支持；如何检测、测量、报告和评估当前的绩效；如何优化自动化调度，以及应用交互程序维护日程依赖关系的集成视图。</p>
+<p>技术和平台：</p>
+<ul class="simple">
+<li><p>基础设施/云下自动化</p></li>
+<li><p>RPA/聊天机器人</p></li>
+<li><p>业务流程管理</p></li>
+<li><p>数据和分析</p></li>
+<li><p>应用自动化</p></li>
+<li><p>物联网/工业物联网</p></li>
+<li><p>自动化架构</p></li>
+<li><p>未来技术</p></li>
+</ul>
+<p>还需要哪些要素，以确保所实施的解决方案和系统具有适应性和灵活性？如何明确需要新的尝试来更新一个解决方案？</p>
+<p>在推出智能自动化解决方案之前，启用一些互补性技术，诸如数据湖（以原始格式存储的系统或存储库）和云服务（通过云计算供应商按需向用户提供的所有服务）。</p>
+<p>自动化的推动因素包括数据和信息管理、劳动力和人才管理、资产和知识管理，以及韧性和业务连续性的原则和实践。</p>
+<p>数据科学家必须确认数据集是完整和准确的，并且算法是适当的。</p>
+<p>自动化的根本还在于获取过去应用在重复性任务或问题上的知识和经验。</p>
+<p>可重复利用行，建立可重复利用的自动化资产和知识的资料库。</p>
+<p>运营模式，即一个处于自动化整体战略目标的水品之下、支持特定商业运作和解决特定运营问题的具体管理工作水平之上的管理框架。</p>
+<p>自动化、人工智能和数字化</p>
+<p>研究、制定战略和解决问题。</p>
+<p>基于分析的方法，运用“可能性的艺术”来指导自动化投资。</p>
+<p>关键的战略，制定战略包括创建路线图。</p>
+<p>创造并确定具体解决方案。</p>
+<p>一个完善的运营模式包括：</p>
+<ul class="simple">
+<li><p>为自动化战略转化为经营成果提供了手段。</p></li>
+<li><p>为交付解决方案提供了一个明确的、以共识为导向的指南。</p></li>
+<li><p>确保更快的收入增长和更高的利润管理。</p></li>
+</ul>
+<p>绘制运营模式图</p>
+<p>卓越中心（COE）模式作为它们的首选模式，业务部门层面增强主动性和试验性。</p>
+<p>卓越中心应该不断第增强其能力，因为：</p>
+<ul class="simple">
+<li><p>业务职能部门作为IT机构的主要利益相关者。有一个侧重于业务与IT保持一致的中央小组，以确保解决方案接近客户需求，并通过IT有效交付。卓越中心可以追踪客户的期望，使之与业务优先事项以及IT保持一致；卓越中心与IT部门合作处理客户反馈。</p></li>
+<li><p>IT机构与业务保持一致。在交付管理、传播所发现的最佳实践，以及团队设计、测试和部署、配置、解决方案支持等方面保持一致。</p></li>
+<li><p>人才管理。一个中央小组可以纵观整个人才组合战略，同时在变革管理、能力管理以及组建混合型劳动力结构方面，知道哪些手段是行之有效的，并具有统揽全局的见解。</p></li>
+<li><p>创新。在企业层面上，投资于提升保持领先优势的理念、提高创新执行力以及提升充满活力的自动化创新生态系统的参与度是最有效的。</p></li>
+<li><p>能力建设和知识强化。知识管理的结构和流程可以维持一个自动化知识中心，从新方案中获取自动化知识，并帮助转移和采用这些知识。</p></li>
+<li><p>合作伙伴和联盟管理。卓越中心可以专注于并持续完善供应商管理，自动化使用以及合同管理。</p></li>
+</ul>
+<p>图5.2 自动化卓越中心成熟度模型</p>
+<p>从个体能力到工业化能力的转变，并为规模化实施奠定了基础。</p>
+<p>如果中心化团队不能完全推动和延续整个组织的自动化，那么组织必须通过去中心化的模式取得成功。</p>
+<p>这并不是真正地创建一个卓越中心，而是创建多个实践社区。</p>
+<p>自动化卓越中心也可以包含一个与业务/客户互动的自动化执行引擎，识别机会、定义优先次序，并向业务部门提供自动化交付能力。</p>
+<p>有效的项目层面的指导</p>
+<p>在项目生命周期的不同阶段做出停止/继续的决定；审查和批准项目的财务预算；审批项目实践表；确保解决方案的设计符合业务要求；在项目经理在需要与项目团队之外的个体打交道时向其提供所需要的可见支持。</p>
+<p>图5.3 自动化卓越中心混合模式</p>
+<p>整个企业的挑战上：业务成熟度、数据访问和治理、文化和人才、平台和架构，以及向平台思维转变。</p>
+<p>业界同行业组织之间最重要的差异化因素以及它们在未来几年的业务表现取决于，他们在建立一个运营模式方面的付出程度如何，包括支持日益数字化的员工队伍，以及不断提供简单、无缝和可持续的自动化解决方案。</p>
+<p>本章要点：</p>
+<ul class="simple">
+<li><p>制订计划是指在进入一个项目之前，要认真设计项目的人员配备和运营模式，明确谁来监管关键决策，以及用什么指标来跟踪进展以实现明确的目标。</p></li>
+<li><p>制订计划本身就是一种能力。有志于将智能自动化应用于许多领域的组织，应该考虑建立一个智能自动化卓越中心。</p></li>
+<li><p>理想情况下，计划是在项目层面以及高于单个项目的层面上同时进行的，因此制订一个计划的一部分是要明确如何在这些不同的工作中获得协同效应。</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2>第6章 未来架构师<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<p>受访者认为架构僵化是大规模创新所面临的最大障碍之一。</p>
+<p>架构如何以及为何是企业自动化可持续发展和可扩展性的一个关键因素。</p>
+<p>推动业务利益和建立自动化</p>
+<p>建立企业自动化架构应将六个关键因素考虑在内：</p>
+<ul class="simple">
+<li><p>系统必须具有足够的适应性，使企业能够快速地对动态市场做出反应。实现这一点需要一个“即插即用”的架构，该架构可以适应技术变革，无缝集成到一个更广泛的合作伙伴生态系统中，并为业务提供敏捷性。</p></li>
+<li><p>建立一个智能自动化的数据结构，并收获商业智能的益处。请记住数据结构的重点不仅是将企业数据集中化，还包括进一步丰富企业数据并最大限度地利用数据。</p></li>
+<li><p>从一开始就决心把人工智能放在架构的核心位置。这是为企业提供差异化客户体验的关键。一个注入了人工智能的自动化架构可以不断进行自我学习、理解、适应和演化，为客户创造新的体验。</p></li>
+<li><p>迁移到云端，以提高敏捷性和自动化的成本效益。在这一点上，云计算在自动化世界中已势不可挡。越来越多的企业正在转向基于云的解决方案。</p></li>
+<li><p>为提升安全性而设计的架构，以保护企业的知识产权和客隐私。将安全性嵌入架构中，以保持由应用程序处理敏感信息的保密性、完整性和可用性。</p></li>
+<li><p>采用以平台为中心的方法来整合自动化工作，实现整个企业的协同效应，并支持解决方案的工业化和规模化。</p></li>
+</ul>
+<p>图6.1 构建一个有弹性的企业自动化架构的因素</p>
+<p>创造更多无缝的端到端体验的战略。</p>
+<p>即如何与要执行自动化解决方案的当前技术堆栈中的元素解耦。</p>
+<p>独立的服务提供者</p>
+<p>微服务</p>
+<p>基于微服务的开放架构如何为企业提供全新的“即插即用”能力就显而易见了。</p>
+<p>以便能够以极大的便利性和极快的部署速度实现大规模的实施。</p>
+<p>它必须实现基于业务需求的高度定制化，包括在选择用于项目管理的人工智能技术方面具有灵活性。基于微服务的高质量模块化自动化架构（或微自动化架构）可以做到这一切。它支持连续交付、独立扩展和自由选择技术。它克服了旧的脆弱性，并以新的稳健性取而代之。</p>
+<p>一个微自动化架构可以使自动化既是分布式的，又是大规模扩展的。</p>
+<p>数据驱动的调研分析工具和机器学习算法，有助于分析师们发现、理解混合可视化海量数据中所隐藏的复杂关系。</p>
+<p>企业需要构建一个数据结构来管理和治理海量数据。</p>
+<p>关键使要有有效的应用程序，从企业海量的结构化和非结构化数据中搜索、分析，并获得洞察力。</p>
+<p>走在前沿的人工智能的用户正在重新思考他们的架构，将人工智能置于其核心位置。通过将整个架构集中在机器学习和深度学习（神经网络）技术上，凭借提供能带来突破性经济效益的解决方案，这些用户极大地拓展了相关方面的能力，并获得了令人印象深刻的竞争优势。</p>
+<p>新的以用户为中心的流程正在通过由数据驱动的、可重复的和敏捷的方式，来帮助该公司定义和解决最重要的用户痛点。</p>
+<p>企业正从各种各样的云服务中立即获益，供应商提供按需访问服务器、存储、数据库、网络、软件、分析和智能等各项服务。</p>
+<p>因此企业的云迁移战略应包括其自动化平台和应用程序。</p>
+<p>对API进行标准化</p>
+<p>云计算使企业更加灵活、敏捷，并通过在云中托管数据和应用为企业节约了成本。</p>
+<p>其中许多环节涉及客户和知识产权的敏感信息，包括这些隐私数据使一项复杂的挑战。</p>
+<p>为了确保与当今的混合显示有效接轨，团队需要提供基于云的解决方案，同时实现对本地数据中心（on-premises data centers）和多云的自动管理。</p>
+<p>平台战略来发展其商业模式</p>
+<p>按照同样的思路，在自动化背景下，追求以平台为中心的方法是建立一个涵盖技术、标准、框架和工作流程的强大基础，并使其能够支持整个企业的自动化项目。</p>
+<p>提供一站式服务</p>
+<p>涵盖了整个自动化领域，包括：</p>
+<p>规划自动化，跟踪和检测自动化的价值实现；预测影响业务的问题；识别与系统交互的、复杂的依赖关系；在整个系统中收获自动化资产。</p>
+<p>有了自动化和集成功能，如“即插即用”模块化、单击配置、虚拟代理和移动警报，向他们的客户提供服务就简单多了。</p>
+<p>速度、敏捷性、生产率和质量方面</p>
+<p>搭建合适的、长期的、可扩展的架构</p>
+<p>它将自己的平台迁移至为服务上，从而实现了迅速响应变化，并在经历爆炸性增长时增加新功能。</p>
+<p>选择灵活、统一和可扩展的架构。</p>
+<p>以平台为中心的方法提高创新速度</p>
+<p>本章要点：</p>
+<ul class="simple">
+<li><p>大多数企业没有能够支持高水平智能自动化的技术基础设施。现有的旧系统通常存在六个方面的缺陷。</p></li>
+<li><p>领先的采用了智能自动化的企业的自动化正在迅速迁移到具有自适应性、便于与丰富的数据结构交互，并以人工智能为核心的架构。适合智能自动化的架构也是基于云的、确保安全的和以平台为中心的。</p></li>
+<li><p>构建一个现代IT架构使一个巨大的挑战，当需要从一个日益过时的旧架构中迁移时，情况就变得复杂得多。高可视化的项目有助于优化优先级。</p></li>
+</ul>
+</section>
+<section id="id10">
+<h2>第7章 激励转型<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
+<p>美国人今天拥有的多达1/4的工作，可能在不久的将来被移交给机器。</p>
+<p>即使使受过良好教育的知识工作者，如果他们每天只花一部分时间从事常规工作，那么他们也会受到影响。“事实上，几乎所有的工作都将开始经历一些来自自动化的压力。”</p>
+<p>通过自动化赋能，能够为客户创造更多价值。</p>
+<p>对人的境界和人才模式的需求。</p>
+<p>帮助激发转型动力</p>
+<p>正因为企业很难像更新软件那样简单第对员工进行升级，所以员工仍将是获得和保持竞争优势的最佳选择。</p>
+<p>人的能力使企业竞争中的真正优势。</p>
+<p>考虑到它们在企业、领域和经济体中的推广速度。</p>
+<p>新工具的意义在于让人们有能力做更重要的事情，而不是让他们做更少的事情。</p>
+<p>自动化促使我们提高员工的认知能力和人际交往能力。自动化将提升基本的决策和解决问题的能力，为员工开启一扇大门，让他们在更高的智力水平上与更多的数据互动；大数据所创造的丰富洞察力也将使员工能够以更深思熟虑的方式合作，这需要更多的人际关系技巧和敏感度。</p>
+<p>但成功的自动化部署和扩大规模需要对业务流程、机器人流程自动化和人工智能技术有深刻理解的人。</p>
+<p>除强大的数字、运营和专业知识外，未来的人才将需要为企业带来创造性的问题解决方式。</p>
+<ul class="simple">
+<li><p>机器劳动力（机器人/平台/人工智能解决方案）。这将成为使一切可以自动化的工作自动化的首要方式。</p></li>
+<li><p>交易型人类劳动力。虽然企业正在将可以自动化的一切变得自动化，但是仍需要人工干预，以处理那些不能自动化的事情。</p></li>
+<li><p>专家劳动力。随着简单的项目在很大程度上被自动化，人类将需要从事越来越复杂的工作。他们将做出更多非常规情况的决定，并在以下方面贡献更多思路：如何及何处需要实现自动化，哪些信息可以帮助他们做出更好的决定。</p></li>
+</ul>
+<p>第一类人是那些使智能自动化变为现实的人，包括自动化技术专家（包括自动化开发人员和架构师）、数据科学家、人工智能倡导者、流程架构师和商业顾问（他们拥抱自动化，并担任交付组织的自动化大使）。</p>
+<p>第二类人使为客户创造价值的专家，他们得到自动化的极大帮助。从预测模型中获取数据，专注于具有高度影响力的业务决策。</p>
+<p>微服务、思维方式、转型和文化的改变。基础设施和应用团队之间要更加泾渭分明。</p>
+<p>熟悉当下技术领域的人才，如人工智能、自动化、行业、敏捷、DevOps、数据安全和深度学习领域。</p>
+<p>埃森哲建立了一个自动化和人工智能职业模型</p>
+<p>开始增强自身的自动化能力</p>
+<p>自动化新手</p>
+<p>自动化解决方案中做了大量实际脚本编写工作。</p>
+<p>根据客户业务构思和实施自动化解决方案，建立高生产率的交付系统。</p>
+<p>自动化架构师和高级自动化架构师。自动化项目进行架构、计划、执行。</p>
+<p>成功的项目并达到衡量其交付效益的指标要求。</p>
+<p>图7.1 自动化专业计划</p>
+<p>自动化架构师，设计自动化解决方案。</p>
+<p>评估业务应用和IT全景的技术专长，由此来确定自动化和优化的机会、确定自动化计划和客户路线图、创建自动化解决方案并量化自动化给客户节省的成本及效益、设计自动化资产，以及在一定范围内领导复杂的实施工作。</p>
+<p>自动化架构师，建立自动化，从开发、测试、维护到基础设施。</p>
+<p>定义整个自动化解决方案，并为其制订实用的自动化蓝图。</p>
+<p>创建一个自动化战略并提供方向。</p>
+<p>参与设计组织的自动化战略做好准备，掌握市场趋势，为企业的自动化战略设计路线图，以及管理销售和交付服务。通过构思和定义跨职能的自动化，他们将为投资组合中所有业务制定卓越自动化的相关政策和开展实践。</p>
+<p>训练人们掌握相关的自动化工具、技术和技能。人机协作</p>
+<p>敏捷和设计思维</p>
+<p>图7.2 自动化人才模型</p>
+<p>“在教学中学习”，因为我们已经看到并且能立即向他人分享，在再培训过程中向人们提问对埃森哲学习文化所产生的影响。</p>
+<p>它消除了一些琐碎的日常任务，使我们的工作变得更有效率，使我们更好地关注我们的工作/客户。终端用户非常重视人与人之间的互动。</p>
+<p>人们在思考自己的工作场所和工作结构时，通常可以很容易地看到智能自动化带来了真正的进步，这对其未来的工作产生了积极的影响。</p>
+<p>思考并计划：谁是消费者？如何让他们准备好？他们将如何在当下使用自动化方案，以及这将为他们创造什么样的推动力？清楚告诉员工和客户，新的工具和技术如何能够使日常交互更有吸引力。</p>
+<p>将自动化的优势转化为人的优势</p>
+<p>这意味着体现在算法中的逻辑和过程使透明的；毕竟参与决策的人，将不可避免地被要求向其他利益相关者（如重要客户）解释。</p>
+<p>“我们能否将其自动化？我们真的不想做这些工作，而且我们还有很多其他工作要做，所以这些工作可以由机器来处理吗？”</p>
+<p>他们应该重新认识文化变革的所有经典工具。</p>
+<p>八项活动：</p>
+<ul class="simple">
+<li><p>提供一个令人信服的积极愿景</p></li>
+<li><p>提供正式的培训</p></li>
+<li><p>确保学习者参与到有关变革的政策和执行中</p></li>
+<li><p>为相关小组和团队提供非正式培训</p></li>
+<li><p>提供训练场地、教练和反馈</p></li>
+<li><p>发挥积极的榜样作用</p></li>
+<li><p>提供支持小组，使学习中遇到的问题能够被交流和讨论</p></li>
+<li><p>提供与新思维和工作方式相一致的系统和结构</p></li>
+</ul>
+<p>讨论数字化趋势，以及确定员工目标。借助设计思维技术和动员会，我们已经成功地与顶级团队合作，达成管理人员能够接受并开始执行的愿景和行动计划。</p>
+<p>智能自动化只是在将更多的任务从人转移给机器。</p>
+<p>人仍然是适应性系统的核心，人与机器写作从而做出可靠的决定，并以指数级的速度采取自信的行动。</p>
+<p>人与技术的连接</p>
+<p>本章要点：</p>
+<ul class="simple">
+<li><p>如果员工没有能力和热情支持变革，任何企业都不可能实现智能自动化的潜力。</p></li>
+<li><p>新的技能使必需的，而且不仅仅体现在技术方面。庞大而多样的员工群体需要接受新的工具，也需要培训和人才发展。</p></li>
+<li><p>企业文化需要朝着适应变化和成长导向的方向转变，在这种文化中，人们渴望技术能帮助他们更好地发挥人力优势。</p></li>
+<li><p>领导层必须全身心地投入人工智能中去，用语言和行动表明态度，并帮助其他人看到人工智能的潜力，让其他人相信人工智能会给员工、客户和社会带来更好的未来。</p></li>
+</ul>
+</section>
+<section id="id11">
+<h2>第8章 保持收益<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
+<p>“持续”，事实上将其称为“维持和加强”更好。</p>
+<p>为了保持自动化的优势，企业必须不断地推陈出新，寻找办法取得创新，并与市场的整体进展保持同步。</p>
+<p>持续的挑战在于如何保持新的自动化势头和提供应用创新的解决方案。</p>
+<p>能源公司加快提升新能力并降低运营成本</p>
+<p>要衡量哪些因素对业务和文档进展至关重要，按下暂停键，对项目的进展情况进行严格的评估。</p>
+<p>仔细考虑了指标，定义了它们希望达成的与客户和市场有关的关键绩效指标，也包括商业运作、IT效率及自动化本身的进展。</p>
+<p>为效益的实现和跟踪做规划，而它需要一个强大的指标和测量系统。</p>
+<p>执行合同时就建立了成本和服务水平基准，并由此对其进行追踪，还可以更新，以反映实施以来获得的效率提升。</p>
+<p>技术、流程，以及所获得和建立的知识。</p>
+<p>《行为设计学：零成本改变》</p>
+<p>每个高能见度的成功案例都有助于建立信任和激发对新一轮变革的热情。</p>
+<p>智能自动化的内部倡导者可能有一个实现更好的未来工作的宏大远景，但他们必须按部就班地接近这个愿景，将他们所面临的限制考虑在内，而不能只看到回报。</p>
+<p>持续的控制和管理体系——一个正式的程序或机制来检测解决方案在实践中的表现，并在需要时进行干预，以保证事情正常向前推进。</p>
+<p>自动化解决方案很容易激增，但随后就会偏离管理人员的监控，并从组织的优先事项列表中消失。</p>
+<p>卓越中心可以基于现在的情况，判断哪些解决方案可以被改进，哪些机会可以作为下一步目标，从而维持组织的自动化优势。</p>
+<p>在机器学习、分析、人工智能和数字化的劳动力时代，这对那些希望保持自动化优势的组织来说无疑是正确的。</p>
+<p>巧妙构思的解决方案从推出那天起就已经过时了。</p>
+<p>快速变化的条件不仅要求加速发展，而且要求解决方案能变得更为敏捷——可以根据实时反馈和新的可能性灵活地改变方向。</p>
+<p>持续发展和创新，经常在生产中部署新的功能和变化，每天数百甚至数千次的频率。</p>
+<p>自动化被应用于如库存管理等后端零售业务，大批量、常规性执行特定的任务，确保高效性、一致性和透明度。</p>
+<p>端对端自动化来提高服务质量</p>
+<p>重新构想的企业模式，除了提高生产率方面的优势，数字工具的其他优势也获得了越来越多的认可。</p>
+<p>零售商现在有新的方法来研究顾客行为，了解购买模式，提供个性化定制服务并改变购物体验。</p>
+<p>实现以前不可能实现的差异化竞争优势和增强客户体验。</p>
+<p>业务必须足够成熟。</p>
+<p>保持业务部门和IT部门之间能顺畅沟通。</p>
+<p>梳理决策权，提高决策的清晰度以及降低延迟度，同时给出恰如其分的引导。</p>
+<p>新的商业模式，实施更多的自动化和人工智能以支持企业的转型，创造更多长期业务价值。</p>
+<p>对于应用额持续检测时必要的，确保通过端对端的自动化旅程创造出持续的价值流。</p>
+<p>为了帮助推动创新，企业应该做到以下几点：</p>
+<p>不断发现新的领域，以创造更好的客户体验，从现有的业务中推动增量价值，并加速增长。</p>
+<p>积极孵化新概念和为新概念打样，这会给业务带来短期影响。鼓励通过创新委员会贡献观点和收获创新成果。</p>
+<p>在趋势研究和思想领导力方面进行投资，以识别和预测改变规则的商业、市场和技术发展。这不仅是传统上主打创造性或咨询业务的企业的当务之急，也是推动所有成长型业务迈向更大成功的当务之急。</p>
+<p>与位于成长期的、使用开放的创新方法开发创新技术的企业合作，并对其投资。</p>
+<p>在企业的各个层面投资于“学习和发展”。</p>
+<p>在科特的经典著作《领导变革》(Leading Change)</p>
+<p>创造一种紧迫感。对于“为什么是现在？”要做到心中有数。</p>
+<p>组件一个强大的联盟来指导工作。</p>
+<p>创造一个积极变化的愿景。</p>
+<p>以令人信服的方式传达这一愿景。</p>
+<p>在组织内广泛授权采取行动。</p>
+<p>创造速赢：尽早形成动力。</p>
+<p>以变革为基础前行：不要松懈。</p>
+<p>让它在组织文化中扎根。</p>
+<p>首先要激发组织的变革意愿，其次要使其不倒退，在这之间要做大量的工作。</p>
+<p>完成的工作要比计划的工作多得多。</p>
+<p>变革就需要在比历程、政策和程序更深的层次上，如企业文化中占据一席之地。</p>
+<p>忽视了分析，费力地收集数据和运行复杂的机器学习模型就没有意义了。许多全球大企业的历史增长都是通过有影响力的高管们根据直觉做出的决策实现的，而不是通过协同的、数字驱动的决策实现的。根据过去的成功经验，一些领导人优先考虑自己的信念和方法，并公开对分析方法和中心化技术表示反感。</p>
+<p>如果企业文化没有将数据和分析放在首位。</p>
+<p>智能自动化的承诺必须始于最高管理层。</p>
+<p>百时美施贵宝公司的智能自动化之旅</p>
+<p>本章要点：</p>
+<p>一个智能自动化解决方案不属于“建立它，忘了它”这一范畴。一旦一个项目结束了，管理人员就必须抑制住宣布胜利的诱惑并随即转向下一个项目。</p>
+<p>即使解决方案在最初实施时是有效的，它们依然有改进空间。保持收益意味着要追踪运营和结果，并根据反馈数据对其进行调整。</p>
+<p>管理人员还必须预见到，随着技术的广泛应用和商业环境的持续演变，基于此所设计出来的解决方案自然会出现不适用的情况。</p>
+<p>在最高层面，企业必须不断寻找新的方法来发挥智能自动化的力量。领导者必须继续注入新的能量，以保持积极势头，实现大规模应用。</p>
+</section>
+<section id="id12">
+<h2>第9章 相关性、韧性和责任感<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h2>
+<p>自动化解决方案必须是有相关性的、有韧性的以及负责任的。</p>
+<p>通常情况下，技术水平和市场需求之间存在着巨大的鸿沟。</p>
+<p>相关性差距</p>
+<p>对于相关性，旁观者清。只能从客户的角度来评估相关性。</p>
+<p>捕捉和阐释客户的期望和满意度。这需要定量分析和定性分析。</p>
+<p>根据客户不断变化的期望进行创新。</p>
+<p>把这一点带到个性化问题和解决方案，就很容易出现个性化产品和服务的爆炸性增长。</p>
+<p>消费者对个性化解决方案的需求将在其他领域出现，而个性化和人工智能增强的产品和服务将变得更普遍。</p>
+<p>对于技术团队来说，相关性的要求意味着需要提高如那件部署的敏捷性。</p>
+<p>应该迅速采纳可以快速践行的方法，如敏捷方法。</p>
+<p>一旦新平台吸引了足够数量的参与者，其应用曲线就会出现拐点，此后参与者的数量会呈指数级增长。</p>
+<p>韧性是企业保持活力的关键所在，包括战略韧性、运营人性和系统韧性。；</p>
+<p>智能自动化可以使驱动业务的系统具有自我修复和自我维护能力。</p>
+<p>我们讨论了自动化架构应具有适应性，赋予系统自我意识和自主性，可以使其自学习、自改进和自适应。</p>
+<p>适应性是指使用机器学习的智能系统能够形成预测、观察结果，根据反馈做出调整以改善它们在下一轮的预测。</p>
+<p>主要指标包括：在企业范围内使用自动化和人工智能，为企业人工智能提供动力的云中连续数据供应链，一个稳定且模块化、灵活、解耦并不断演变的架构。</p>
+<p>技术采用水平和组织灵活性</p>
+<p>更加数字化、数据驱动和上云；拥有更多可变的成本结构、敏捷的操作和自动化；在电子商务和安全方面建立更强大的能力。</p>
+<p>预计将来会看到对智能自动化工具包的更多投资——应用人工智能的认知能力、工业机器人、服务机器人和机器人流程自动化。</p>
+<p>“负责任的自动化”</p>
+<p>无偏见的、透明的、可控的和受保护的。</p>
+<p>信息系统中最古老和最真实的说法之一是”垃圾进，垃圾出”(GIGO)</p>
+<p>BIBO，即”偏见进，偏见出“</p>
+<ul class="simple">
+<li><p>识别一个人工智能模型所接触的偏见媒介，其中包括道德、社会、政治和历史或其他可能影响其训练的偏见。</p></li>
+<li><p>从不同领域的专家那里收集可以预见和避免的负面情况。建立衡量标准，检测任何接近或偏离这些情况的情景。</p></li>
+<li><p>审视数据的包容性以及能体现人口多样性的能力，包括性别、种族、民族、宗教、意识形态和其他维度。</p></li>
+<li><p>对数据要有彻底的了解，以便于关注和快速修复任何有问题的数据标签。合理设置数据结构。</p></li>
+<li><p>识别并消除任何可以预见的，或在实践中得以确认的，会将结果引向偏见的和歧视性方向的因素。</p></li>
+<li><p>不断地分析性能和结果，并且纳入用户的反馈。</p></li>
+</ul>
+<p>将主要业务问题领域拆解为可管理的部分</p>
+<p>在开发过程中与最终用户产生共鸣</p>
+<p>让模型接受不同的测试者</p>
+<p>创建认可多样性的反馈系统</p>
+<p>以反馈为基础建立一个持续改进的系统</p>
+<p>创建透明的系统</p>
+<p>瑞·达利欧《原则》</p>
+<p>机器完成了大部分工作，而我们则以高质量的方式与之互动。</p>
+<p>借助算法进行决策的一个好处在于，它可以使人们将关注点都放在因果关系上，以这种方式鼓励真正的创意择优。当每个人都能看到算法使用的标准，并参与制定这些标准时，他们会一致认为这个系统使公平的，并放心地让计算机查看证据，对人做出正确的评估，并赋予他们合理的权力。算法本质上是在持续性的基础上发挥作用的原则。</p>
+<p>识别决策过程将变得越来越困难。</p>
+<p>设计时在系统中内置人的因素的最终目标是带来可追溯性的元素。</p>
+<p>在决策过程中引入人类的控制元素，不仅可以确保回溯决策过程的步骤，而且还能确保这些步骤在运行时间内被跟踪。</p>
+<p>企业的IT系统很容易受到恶意的攻击或恶意勒索软件的攻击。巩固这些先进技术的安全机制至关重要。</p>
+<p>检测到并纠正扭曲的数据分类，检测和结症对抗性的(恶意)数据，并为接受过预训练的人工智能系统的脆弱性/安全性提供一个分数。</p>
+<p>本章要点：</p>
+<ul class="simple">
+<li><p>只要新一代的自动化解决方案以三个核心原则为指导，就会使世界变得更好。三个核心原则使：相关性、韧性和责任感。</p></li>
+<li><p>智能自动化越来越多地应用于员工和客户关心的问题和决策，与企业成功的相关性越来越强。</p></li>
+<li><p>有了更好的意识和适应性，解决方案将具有更多的韧性，并将使企业本身在应对紧急情况和危机时更具韧性。</p></li>
+<li><p>智能自动化解决方案的供应商和用户都将通过纠正不符合道德规范的偏见和增强透明度，确保可控性，并保护对人工智能系统的访问。</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./learning"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>序</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>前言</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">第1章 人工智能，势在必行</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">第2章 做好克服障碍的准备</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">第3章 从制定战略意图开始</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">第4章 选择七点及设计旅程图</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">第5章 制订一个计划</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">第6章 未来架构师</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">第7章 激励转型</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">第8章 保持收益</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">第9章 相关性、韧性和责任感</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 崔驰坤 Cui, Richard Chikun
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

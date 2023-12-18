@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'architecture/reference-architecture';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="学术研究" href="../learning/research-guide.html" />
+    <link rel="next" title="个人规划" href="../personal/plan.html" />
     <link rel="prev" title="欢迎使用您的Jupyter Book" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -175,6 +175,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">架构</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">参考架构</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://">数字化转型</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://">技术架构</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://">业务架构</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://">解决方案架构</a></li>
@@ -188,6 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">个人管理</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../personal/plan.html">个人规划</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://">番茄工作法</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://">单核工作法</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://">精力管理</a></li>
@@ -437,13 +439,17 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">认证</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">前台</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">登录</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">前台</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">素材</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ec2">基本架构EC2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serverless">基本架构Serverless</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">可观测性</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">数据缓存</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">数据库</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">可观测性</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">数据缓存</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">数据库</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-cd">CI/CD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">技术栈</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#react">React</a></li>
 </ul>
             </nav>
         </div>
@@ -471,11 +477,42 @@ document.write(`
 <p>单点登录 SSO 解决方案</p>
 </section>
 <section id="id3">
-<h2>前台<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<h2>登录<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>密码加密</p>
+<p><a class="reference external" href="https://www.npmjs.com/package/bcrypt">bcrypt - npm (npmjs.com)</a></p>
+<p><a class="reference external" href="https://codahale.com/how-to-safely-store-a-password/">How To Safely Store A Password | codahale.com</a></p>
+<p>单点登录</p>
+<p><a class="reference external" href="https://blog.bytebytego.com/p/what-is-sso-episode-7?utm_source=%2Fsearch%2FSSO&amp;utm_medium=reader2">What is SSO (Episode 7) - by Alex Xu (bytebytego.com)</a></p>
+<p><a class="reference external" href="https://blog.bytebytego.com/p/password-session-cookie-token-jwt">Password, Session, Cookie, Token, JWT, SSO, OAuth - Authentication Explained - Part 1 (bytebytego.com)</a></p>
+<p><a class="reference external" href="https://blog.bytebytego.com/p/password-session-cookie-token-jwt-ec1">Password, Session, Cookie, Token, JWT, SSO, OAuth - Authentication Explained - Part 2 (bytebytego.com)</a></p>
+<p><a class="reference external" href="https://blog.bytebytego.com/p/ep34-session-cookie-jwt-token-sso">EP34: Session, cookie, JWT, token, SSO, and OAuth (bytebytego.com)</a></p>
+<p>无服务器App</p>
+<p><a class="reference external" href="https://www.serverless.com/blog/structuring-a-real-world-serverless-app">Structuring a Real-World Serverless App</a></p>
+<p><a class="reference external" href="https://medium.com/aws-serverless-microservices-with-patterns-best/serverless-project-code-structure-for-aws-serverless-e-commerce-architecture-e5015a0d6778">Serverless Project Code Structure for AWS Serverless E-Commerce Architecture | by Mehmet Ozkaya | AWS Serverless Microservices with Patterns &amp; Best Practices | Medium</a></p>
+<p><a class="reference external" href="https://aws.amazon.com/blogs/compute/best-practices-for-organizing-larger-serverless-applications/">Best practices for organizing larger serverless applications | AWS Compute Blog (amazon.com)</a></p>
+<p><a class="reference external" href="https://www.serverless.com/blog/anatomy-of-a-serverless-app/">Anatomy of a Serverless Application</a></p>
+<p><a class="github reference external" href="https://github.com/erezrokah/serverless-monorepo-app">erezrokah/serverless-monorepo-app</a></p>
+</section>
+<section id="id4">
+<h2>前台<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <p>前台</p>
 <ul class="simple">
 <li><p>S3</p></li>
 <li><p>CloudFront (CDN)</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>素材<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p>图形素材</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.flaticon.com/">Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS (flaticon.com)</a></p></li>
+<li><p><a class="reference external" href="https://undraw.co/illustrations">Illustrations | unDraw</a></p></li>
+<li><p><a class="reference external" href="https://sc.chinaz.com/shiliang/">矢量图， 矢量图库免费下载 - 站长素材 (chinaz.com)</a></p></li>
+<li><p><a class="reference external" href="http://www.sccnn.com/shiliangtuku/">素材天下_矢量图库_素材CNN_素材中国 (sccnn.com)</a></p></li>
+</ul>
+<p>设计工具</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.canva.com/zh_cn/">免费设计工具：设计制作演示文稿、视频、社交媒体等 - Canva</a></p></li>
 </ul>
 </section>
 <section id="ec2">
@@ -512,8 +549,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id4">
-<h2>可观测性<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<section id="id6">
+<h2>可观测性<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>可观测性</p>
 <ul>
@@ -533,8 +570,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id5">
-<h2>数据缓存<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<section id="id7">
+<h2>数据缓存<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>缓存</p>
 <ul>
@@ -543,8 +580,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id6">
-<h2>数据库<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<section id="id8">
+<h2>数据库<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>数据库</p>
 <ul>
@@ -567,6 +604,40 @@ document.write(`
 <li><p>AWS CodeDeploy</p></li>
 </ul>
 <p><img alt="" src="../_images/ci-cd.png" /></p>
+</section>
+<section id="id9">
+<h2>技术栈<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>React + Next.js</strong> front-end with <strong>Tailwind</strong></p></li>
+<li><p><strong>Next.js</strong> or <strong>Express</strong> derivative back-end</p></li>
+<li><p><strong>Prisma</strong> (+ <strong>Apollo</strong> if using GraphQL)</p></li>
+<li><p><strong>Postgres</strong> (flavored), <strong>Mongo</strong>, <strong>Firestore</strong>, or <strong>Dynamo</strong> database</p></li>
+<li><p>Python based backends if the company is doing any ML</p></li>
+</ul>
+<p>React: <a class="reference external" href="https://react.dev/">React</a></p>
+<p>Next.js: <a class="reference external" href="https://nextjs.org/">Next.js by Vercel - The React Framework (nextjs.org)</a></p>
+<p>Tailwind: <a class="reference external" href="https://tailwindcss.com/">Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.</a></p>
+<p>Express: <a class="reference external" href="https://expressjs.com/">Express - Node.js web application framework (expressjs.com)</a></p>
+<p>Prisma: <a class="reference external" href="https://www.prisma.io/">Prisma | Next-generation ORM for Node.js &amp; TypeScript</a></p>
+<p>Apollo: <a class="reference external" href="https://www.apollographql.com/">Apollo GraphQL | Supergraph: unify APIs, microservices, &amp; databases in a composable graph</a></p>
+<p>Postgres: <a class="reference external" href="https://www.postgresql.org/">PostgreSQL: The world’s most advanced open source database</a></p>
+<p>MongoDB: <a class="reference external" href="https://www.mongodb.com/">https://www.mongodb.com/</a></p>
+<p>Firestore: <a class="reference external" href="https://firebase.google.com/">https://firebase.google.com/</a></p>
+<p>DynamoDB: <a class="reference external" href="https://aws.amazon.com/dynamodb/">Fast NoSQL Key-Value Database – Amazon DynamoDB – Amazon Web Services</a></p>
+<p>Python: <a class="reference external" href="https://www.python.org/">Welcome to Python.org</a></p>
+</section>
+<section id="react">
+<h2>React<a class="headerlink" href="#react" title="Permalink to this heading">#</a></h2>
+<p>React: <a class="reference external" href="https://react.dev/">React</a></p>
+<p>在线编辑器</p>
+<p><a class="reference external" href="https://codesandbox.io/s/new">React - CodeSandbox</a></p>
+<p><a class="reference external" href="https://stackblitz.com/edit/react-gqfpys?file=src%2FApp.js">React (forked) - StackBlitz</a></p>
+<p><a class="reference external" href="https://codepen.io/pen?&amp;editors=0010&amp;layout=left">Create a New Pen (codepen.io)</a></p>
+<p><a class="reference external" href="https://www.notion.so/React-Login-Form-6533916690a74393adb72f18b7700eab?pvs=21">React - Login Form</a></p>
+<p>创建React App</p>
+<div class="highlight-Bash notranslate"><div class="highlight"><pre><span></span>npx<span class="w"> </span>create-next-app
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -610,11 +681,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../learning/research-guide.html"
+       href="../personal/plan.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">学术研究</p>
+        <p class="prev-next-title">个人规划</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -634,13 +705,17 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">认证</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">前台</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">登录</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">前台</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">素材</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ec2">基本架构EC2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serverless">基本架构Serverless</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">可观测性</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">数据缓存</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">数据库</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">可观测性</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">数据缓存</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">数据库</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-cd">CI/CD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">技术栈</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#react">React</a></li>
 </ul>
   </nav></div>
 
