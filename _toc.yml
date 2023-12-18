@@ -13,3 +13,6 @@ parts:
     - file: liquid-level-detection/formula.md
     - file: liquid-level-detection/working-condition.md
     - file: liquid-level-detection/mankendall-algorithm.ipynb
+  - caption: 微信聊天机器人
+    chapters:
+    - file: wechat-bot/development.md
