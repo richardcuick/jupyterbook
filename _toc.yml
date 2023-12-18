@@ -4,15 +4,81 @@
 format: jb-book
 root: intro
 parts:
+  - caption: 英语
+    chapters:
+    - url: http://
+      title: 英语
+  - caption: 架构
+    chapters:
+    - url: http://
+      title: 技术架构
+    - url: http://
+      title: 业务架构
+    - url: http://
+      title: 解决方案架构
+    - url: http://
+      title: 企业架构
+  - caption: 团队
+    chapters:
+    - url: http://
+      title: SCRUM
+    - url: http://
+      title: SAFe
+    - url: http://
+      title: DevOps
+  - caption: 个人管理
+    chapters:
+    - url: http://
+      title: 番茄工作法
+    - url: http://
+      title: 单核工作法
+    - url: http://
+      title: 精力管理
+    - url: http://
+      title: 自我量化
+    - url: http://
+      title: 健康管理
+  - caption: 技术
+    chapters:
+    - url: http://
+      title: Serverless
+    - url: http://
+      title: RESTful API
+  - caption: 微软MVP
+    chapters:
+    - url: http://
+      title: 空
+  - caption: 设计思维
+    chapters:
+    - url: https://
+      title: 空
+  - caption: 技术雷达
+    chapters:
+    - url: http://
+      title: 空
   - caption: 学习方法
     chapters:
     - file: learning/research-guide.md
+    - file: learning/csharp-kernal-installation.md
+    - file: learning/knowledge-base.md
+    - url: http://
+      title: 知识图谱
   - caption: 双液面一体化监测
     chapters:
+    - file: liquid-level-detection/project.md
     - file: liquid-level-detection/volume-calculation.md
     - file: liquid-level-detection/formula.md
     - file: liquid-level-detection/working-condition.md
     - file: liquid-level-detection/mankendall-algorithm.ipynb
+    - file: liquid-level-detection/communication.md
+    - file: liquid-level-detection/drilling.md
+    - file: liquid-level-detection/navigation.md
+    - file: liquid-level-detection/data-model.md
+    - file: liquid-level-detection/meeting-1.md
+    - file: liquid-level-detection/meeting-2.md
   - caption: 微信聊天机器人
     chapters:
     - file: wechat-bot/development.md
+  - caption: 信奥OJ
+    chapters:
+    - file: online-judge/project.md
