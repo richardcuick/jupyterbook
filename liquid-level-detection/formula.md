@@ -62,7 +62,7 @@ Disp. ( BBL ) = ( ( OD ) 2 - ( ID ) 2 / 1029.4 ) * MD
 
 环空体积:井壁与钻柱之间的泥浆体积
 
-Annular volume ( BBL ) = ( ( ID hole ) 2 - ( OD drill pipe ) 2 /1029.4 *MD（OD为钻杆外径）
+Annular volume ( BBL ) = ( ( ID hole ) 2 - ( OD drill pipe ) 2 /1029.4 x MD（OD为钻杆外径）
 
 ---
 
@@ -70,13 +70,13 @@ Lag time = volume / flow rate
 
 泥浆在两个指定深度点之间进入井内所需的时间 = 体积/流量
 
-pump out put ( POP ) ( BBL / STK ) = ( ID2 ine * L stroke * eff. ) / 4116
+pump out put ( POP ) ( BBL / STK ) = ( ID2 ine x L stroke x eff. ) / 4116
 
-泵产量 ( 桶 / 冲程 ) = ( 泥浆泵内衬的内径 ( 单位为英寸 ) x 泥浆泵柱塞冲程长度 * eff ) / 4116
+泵产量 ( 桶 / 冲程 ) = ( 泥浆泵内衬的内径 ( 单位为英寸 ) x 泥浆泵柱塞冲程长度 x eff ) / 4116
 
-Flow rate ( GPM ) = POP * SPM * 42
+Flow rate ( GPM ) = POP x SPM x 42
 
-流量 = pop * 每分钟冲次 * 42
+流量 = pop x 每分钟冲次 x 42
 
 Total circ time ( min ) = V active / ( POP x SPM )
 

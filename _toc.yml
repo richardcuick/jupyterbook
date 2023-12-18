@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 parts:
+  - caption: 学习方法
+    chapters:
+    - file: learning/research-guide.md
   - caption: 双液面一体化监测
     chapters:
     - file: liquid-level-detection/volume-calculation.md
