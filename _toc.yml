@@ -10,6 +10,9 @@ parts:
       title: 英语
   - caption: 架构
     chapters:
+    - file: architecture/reference-architecture.md
+    - url: http://
+      title: 数字化转型
     - url: http://
       title: 技术架构
     - url: http://
@@ -28,6 +31,7 @@ parts:
       title: DevOps
   - caption: 个人管理
     chapters:
+    - file: personal/plan.md
     - url: http://
       title: 番茄工作法
     - url: http://
@@ -61,6 +65,7 @@ parts:
     - file: learning/research-guide.md
     - file: learning/csharp-kernal-installation.md
     - file: learning/knowledge-base.md
+    - file: learning/ai-automation.md
     - url: http://
       title: 知识图谱
     - file: learning/ai-awesome-list.md
